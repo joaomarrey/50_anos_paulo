@@ -33,20 +33,42 @@
             </ul>
         </nav> -->
 
-        <nav id="site-nav" class="fixed top-0 left-0 w-full z-50 
+        <!-- <nav id="site-nav" class="fixed top-0 left-0 w-full z-50 
             bg-gradient-to-r from-black from-15% to-red-900 to-85% 
             text-white shadow px-6 py-4 
             flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
 
             <div class="w-1/3"></div>
 
-            <!-- Centered title (on mobile it appears first, centered) -->
+            
             <h1 class="text-2xl md:text-4xl font-bold text-center flex-1 w-1/3">
                 50 anos do Paulo
             </h1>
 
-            <!-- Right-side links -->
+ 
             <ul class="flex flex-wrap justify-center md:justify-end gap-4 md:gap-8 text-lg w-1/3">
+                <li><a href="#" class="hover:text-black">Home</a></li>
+                <li><a href="#" class="hover:text-black">Confirmar Presença</a></li>
+                <li><a href="#" class="hover:text-black">Informações</a></li>
+            </ul>
+        </nav> -->
+
+        <nav id="site-nav"
+            class="fixed top-0 left-0 w-full z-50
+                    bg-gradient-to-r from-black from-15% to-red-900 to-85%
+                    text-white shadow px-4 md:px-8 py-3 md:py-5
+                    grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-2">
+
+            <!-- LEFT spacer only visible on md+ (balances the right links so the title is centered) -->
+            <div class="hidden md:block"></div>
+
+            <!-- CENTER title (always centered visually) -->
+            <h1 class="justify-self-center text-2xl md:text-4xl font-bold">
+                50 anos do Paulo
+            </h1>
+
+            <!-- RIGHT links: centered on mobile, aligned to end on md+; side-by-side with gap -->
+            <ul class="flex justify-center md:justify-end gap-4 md:gap-8 text-lg">
                 <li><a href="#" class="hover:text-black">Home</a></li>
                 <li><a href="#" class="hover:text-black">Confirmar Presença</a></li>
                 <li><a href="#" class="hover:text-black">Informações</a></li>
@@ -148,12 +170,6 @@
         <footer class="text-center text-white py-6 bg-gray-800 m-0">
             © 2025 João Marrey Mendonça. All rights reserved.
         </footer>
-        
-        <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0HHD_zwBYSBmR1cFEJMaQmLgae46yx48&libraries=maps,marker&v=beta"
-            defer
-        >
-        </script>
 
         <!-- Script that measures the nav and updates the CSS variable -->
         <script>
