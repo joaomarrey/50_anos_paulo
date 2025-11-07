@@ -92,7 +92,7 @@
 
                         <p id="status" class="mt-4 text-center text-gray-700 hidden">Enviando...</p>
 
-                        <div class="g-recaptcha" data-sitekey="6Ld5YQUsAAAAALhx6yCDyvMdp85N-kgEUN7RZuvu"></div>
+                        <div id="captcha" class="g-recaptcha hidden" data-sitekey="6Ld5YQUsAAAAALhx6yCDyvMdp85N-kgEUN7RZuvu"></div>
                     </form>
                 </div>
             </section>
@@ -175,6 +175,9 @@
             const status = document.getElementById("status");
             status.classList.remove("hidden");
             status.textContent = "Enviando...";
+
+            const captcha = document.getElementById("captcha")
+            captcha.classList.remove("hidden")
 
             const recaptchaResponse = grecaptcha.getResponse();
             if (!recaptchaResponse) {
